@@ -9,7 +9,7 @@ app = FastAPI()
 # 1. CORS Middleware: Strict policy
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://app-f1panr.example.com", "https://exam.iitm.ac.in"], # Add exam domain
+    allow_origins=["*"], # Add exam domain
     allow_methods=["*"],
     allow_headers=["*"],
 )
